@@ -14,9 +14,9 @@ def destroy_domains():
             dom.destroy()
             time.sleep(1)
         if conn.listDomainsID():
-            print 'ERROR! there are live domains.'
+            print ('ERROR! there are live domains.')
     else:
-        print 'Failed to open connection to the hypervisor'
+        print ('Failed to open connection to the hypervisor')
 
 
 if __name__ == '__main__':
